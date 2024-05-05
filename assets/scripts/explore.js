@@ -1,12 +1,4 @@
-// explore.js
-
 window.addEventListener('DOMContentLoaded', init);
-
-function init() {
- // explore.js
-
-window.addEventListener('DOMContentLoaded', init);
-
 function init() {
   const textInput = document.getElementById('text-to-speak');
   const voiceSelect = document.getElementById('voice-select');
@@ -57,5 +49,4 @@ function init() {
     }
 
   });
-}
 }
