@@ -1,6 +1,7 @@
 # Lab 5 - Starter
 Lab Partners: Isabelle Layon and James Ouyang
 
+[github pages](https://ilayon.github.io/Lab5_Starter/)
 [expose.html](https://ilayon.github.io/Lab5_Starter/expose.html)
 [explore.html](https://ilayon.github.io/Lab5_Starter/explore.html)
 
