@@ -2,7 +2,9 @@
 Lab Partners: Isabelle Layon and James Ouyang
 
 [github pages](https://ilayon.github.io/Lab5_Starter/)
+
 [expose.html](https://ilayon.github.io/Lab5_Starter/expose.html)
+
 [explore.html](https://ilayon.github.io/Lab5_Starter/explore.html)
 
 1) I would not use a unit test to test the "message" feature of a messaging application. This is because of the con that unit testing cannot test how individual components
