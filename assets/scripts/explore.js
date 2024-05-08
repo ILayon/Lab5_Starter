@@ -4,10 +4,10 @@ function init() {
   const voiceSelect = document.getElementById('voice-select');
   const button = document.querySelector('button');
   var image = document.querySelector('img[alt="Smiling face"]');
-  var voices = speechSynthesis.getVoices();
 
 
   function populateVoiceList() {
+    var voices = speechSynthesis.getVoices();
     for (let i = 0; i < voices.length; i++) {
       const option = document.createElement('option');
       option.textContent = voices[i].name + '(' + voices[i].lang + ')';
@@ -19,6 +19,8 @@ function init() {
 
   populateVoiceList();
 
+  speechSynthesis.addEventListener('voiceschanged', populateVoiceList);
+
   button.addEventListener('click', function(){
     const speech = textInput.value;
     const chosenVoice = voiceSelect.selectedOptions[0].getAttribute('data-name');
@@ -26,6 +28,7 @@ function init() {
 
     if(speech != '' && chosenVoice != null){
       const utterThis = new SpeechSynthesisUtterance(textInput.value);
+      var voices = speechSynthesis.getVoices();
       for (let i = 0; i < voices.length; i++) {
         if (voices[i].name === chosenVoice) {
           utterThis.voice = voices[i];
